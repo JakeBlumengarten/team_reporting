@@ -1,0 +1,273 @@
+old_game_id,week,game_type,home_team,home_score,away_team,away_score,gameday,gametime,overtime,roof,surface,temp,wind,home_coach,away_coach,referee,stadium_id,stadium
+2025090400,1,REG,PHI,24,DAL,20,2025-09-04,20:20,0,outdoors,grass,75,11,Nick Sirianni,Brian Schottenheimer,Shawn Smith,PHI00,Lincoln Financial Field
+2025090500,1,REG,LAC,27,KC,21,2025-09-05,20:00,0,dome,,NA,NA,Jim Harbaugh,Andy Reid,Carl Cheffers,LAX01,SoFi Stadium
+2025090700,1,REG,ATL,20,TB,23,2025-09-07,13:00,0,closed,fieldturf,NA,NA,Raheem Morris,Todd Bowles,Land Clark,ATL97,Mercedes-Benz Stadium
+2025090701,1,REG,CLE,16,CIN,17,2025-09-07,13:00,0,outdoors,grass,63,10,Kevin Stefanski,Zac Taylor,Adrian Hill,CLE00,FirstEnergy Stadium
+2025090702,1,REG,IND,33,MIA,8,2025-09-07,13:00,0,closed,fieldturf,NA,NA,Shane Steichen,Mike McDaniel,Brad Allen,IND00,Lucas Oil Stadium
+2025090703,1,REG,JAX,26,CAR,10,2025-09-07,13:00,0,outdoors,grass,85,3,Liam Coen,Dave Canales,Alex Moore,JAX00,TIAA Bank Stadium
+2025090704,1,REG,NE,13,LV,20,2025-09-07,13:00,0,outdoors,fieldturf,62,4,Mike Vrabel,Pete Carroll,Ron Torbert,BOS00,Gillette Stadium
+2025090705,1,REG,NO,13,ARI,20,2025-09-07,13:00,0,dome,sportturf,NA,NA,Kellen Moore,Jonathan Gannon,Scott Novak,NOR00,Mercedes-Benz Superdome
+2025090706,1,REG,NYJ,32,PIT,34,2025-09-07,13:00,0,outdoors,fieldturf,67,3,Aaron Glenn,Mike Tomlin,Bill Vinovich,NYC01,MetLife Stadium
+2025090707,1,REG,WAS,21,NYG,6,2025-09-07,13:00,0,outdoors,grass,68,5,Dan Quinn,Brian Daboll,Clay Martin,WAS00,FedExField
+2025090708,1,REG,DEN,20,TEN,12,2025-09-07,16:05,0,outdoors,grass,84,6,Sean Payton,Brian Callahan,Alex Kemp,DEN00,Empower Field at Mile High
+2025090709,1,REG,SEA,13,SF,17,2025-09-07,16:05,0,outdoors,fieldturf,67,6,Mike Macdonald,Kyle Shanahan,Shawn Hochuli,SEA00,Lumen Field
+2025090710,1,REG,GB,27,DET,13,2025-09-07,16:25,0,outdoors,grass,60,5,Matt LaFleur,Dan Campbell,Clete Blakeman,GNB00,Lambeau Field
+2025090711,1,REG,LA,14,HOU,9,2025-09-07,16:25,0,dome,matrixturf,NA,NA,Sean McVay,DeMeco Ryans,Craig Wrolstad,LAX01,SoFi Stadium
+2025090712,1,REG,BUF,41,BAL,40,2025-09-07,20:20,0,outdoors,a_turf,58,8,Sean McDermott,John Harbaugh,John Hussey,BUF00,New Era Field
+2025090800,1,REG,CHI,24,MIN,27,2025-09-08,20:15,0,outdoors,grass,68,6,Ben Johnson,Kevin O'Connell,Alan Eck,CHI98,Soldier Field
+2025091100,2,REG,GB,27,WAS,18,2025-09-11,20:15,0,outdoors,grass,65,7,Matt LaFleur,Dan Quinn,Brad Rogers,GNB00,Lambeau Field
+2025091400,2,REG,BAL,41,CLE,17,2025-09-14,13:00,0,outdoors,grass,82,3,John Harbaugh,Kevin Stefanski,Brad Allen,BAL00,M&T Bank Stadium
+2025091401,2,REG,CIN,31,JAX,27,2025-09-14,13:00,0,outdoors,fieldturf,85,3,Zac Taylor,Liam Coen,Alan Eck,CIN00,Paycor Stadium
+2025091402,2,REG,DAL,40,NYG,37,2025-09-14,13:00,1,closed,matrixturf,NA,NA,Brian Schottenheimer,Brian Daboll,Bill Vinovich,DAL00,AT&T Stadium
+2025091403,2,REG,DET,52,CHI,21,2025-09-14,13:00,0,dome,fieldturf,NA,NA,Dan Campbell,Ben Johnson,Land Clark,DET00,Ford Field
+2025091404,2,REG,MIA,27,NE,33,2025-09-14,13:00,0,outdoors,grass,89,4,Mike McDaniel,Mike Vrabel,Alex Moore,MIA00,Hard Rock Stadium
+2025091405,2,REG,NO,21,SF,26,2025-09-14,13:00,0,dome,sportturf,NA,NA,Kellen Moore,Kyle Shanahan,Shawn Smith,NOR00,Mercedes-Benz Superdome
+2025091406,2,REG,NYJ,10,BUF,30,2025-09-14,13:00,0,outdoors,fieldturf,80,3,Aaron Glenn,Sean McDermott,Clete Blakeman,NYC01,MetLife Stadium
+2025091407,2,REG,PIT,17,SEA,31,2025-09-14,13:00,0,outdoors,grass,79,5,Mike Tomlin,Mike Macdonald,Scott Novak,PIT00,Acrisure Stadium
+2025091408,2,REG,TEN,19,LA,33,2025-09-14,13:00,0,outdoors,grass,83,3,Brian Callahan,Sean McVay,John Hussey,NAS00,Nissan Stadium
+2025091409,2,REG,ARI,27,CAR,22,2025-09-14,16:05,0,closed,grass,NA,NA,Jonathan Gannon,Dave Canales,Ron Torbert,PHO00,State Farm Stadium
+2025091410,2,REG,IND,29,DEN,28,2025-09-14,16:05,0,closed,fieldturf,NA,NA,Shane Steichen,Sean Payton,Craig Wrolstad,IND00,Lucas Oil Stadium
+2025091411,2,REG,KC,17,PHI,20,2025-09-14,16:25,0,outdoors,grass,88,12,Andy Reid,Nick Sirianni,Alex Kemp,KAN00,GEHA Field at Arrowhead Stadium
+2025091412,2,REG,MIN,6,ATL,22,2025-09-14,20:20,0,dome,sportturf,NA,NA,Kevin O'Connell,Raheem Morris,Adrian Hill,MIN01,U.S. Bank Stadium
+2025091500,2,REG,HOU,19,TB,20,2025-09-15,19:00,0,closed,astroturf,NA,NA,DeMeco Ryans,Todd Bowles,Shawn Hochuli,HOU00,NRG Stadium
+2025091501,2,REG,LV,9,LAC,20,2025-09-15,22:00,0,dome,grass,NA,NA,Pete Carroll,Jim Harbaugh,Clay Martin,VEG00,Allegiant Stadium
+2025091800,3,REG,BUF,31,MIA,21,2025-09-18,20:15,0,outdoors,a_turf,68,7,Sean McDermott,Mike McDaniel,Alan Eck,BUF00,New Era Field
+2025092100,3,REG,CAR,30,ATL,0,2025-09-21,13:00,0,outdoors,grass,83,5,Dave Canales,Raheem Morris,Craig Wrolstad,CAR00,Bank of America Stadium
+2025092101,3,REG,CLE,13,GB,10,2025-09-21,13:00,0,outdoors,grass,79,10,Kevin Stefanski,Matt LaFleur,Carl Cheffers,CLE00,FirstEnergy Stadium
+2025092102,3,REG,JAX,17,HOU,10,2025-09-21,13:00,0,outdoors,grass,85,11,Liam Coen,DeMeco Ryans,Alex Kemp,JAX00,TIAA Bank Stadium
+2025092103,3,REG,MIN,48,CIN,10,2025-09-21,13:00,0,dome,sportturf,NA,NA,Kevin O'Connell,Zac Taylor,Ron Torbert,MIN01,U.S. Bank Stadium
+2025092104,3,REG,NE,14,PIT,21,2025-09-21,13:00,0,outdoors,fieldturf,66,5,Mike Vrabel,Mike Tomlin,Clete Blakeman,BOS00,Gillette Stadium
+2025092105,3,REG,PHI,33,LA,26,2025-09-21,13:00,0,outdoors,grass,73,9,Nick Sirianni,Sean McVay,Brad Rogers,PHI00,Lincoln Financial Field
+2025092106,3,REG,TB,29,NYJ,27,2025-09-21,13:00,0,outdoors,grass,88,5,Todd Bowles,Aaron Glenn,Adrian Hill,TAM00,Raymond James Stadium
+2025092107,3,REG,TEN,20,IND,41,2025-09-21,13:00,0,outdoors,grass,84,8,Brian Callahan,Shane Steichen,Scott Novak,NAS00,Nissan Stadium
+2025092108,3,REG,WAS,41,LV,24,2025-09-21,13:00,0,outdoors,grass,72,6,Dan Quinn,Pete Carroll,Shawn Hochuli,WAS00,FedExField
+2025092109,3,REG,LAC,23,DEN,20,2025-09-21,16:05,0,dome,matrixturf,NA,NA,Jim Harbaugh,Sean Payton,Shawn Smith,LAX01,SoFi Stadium
+2025092110,3,REG,SEA,44,NO,13,2025-09-21,16:05,0,outdoors,fieldturf,63,3,Mike Macdonald,Kellen Moore,Alex Moore,SEA00,Lumen Field
+2025092111,3,REG,CHI,31,DAL,14,2025-09-21,16:25,0,outdoors,grass,82,4,Ben Johnson,Brian Schottenheimer,Clay Martin,CHI98,Soldier Field
+2025092112,3,REG,SF,16,ARI,15,2025-09-21,16:25,0,outdoors,grass,72,7,Kyle Shanahan,Jonathan Gannon,John Hussey,SFO01,Levi's Stadium
+2025092113,3,REG,NYG,9,KC,22,2025-09-21,20:20,0,outdoors,fieldturf,65,5,Brian Daboll,Andy Reid,Land Clark,NYC01,MetLife Stadium
+2025092200,3,REG,BAL,30,DET,38,2025-09-22,20:15,0,outdoors,grass,74,7,John Harbaugh,Dan Campbell,Bill Vinovich,BAL00,M&T Bank Stadium
+2025092500,4,REG,ARI,20,SEA,23,2025-09-25,20:15,0,closed,grass,NA,NA,Jonathan Gannon,Mike Macdonald,Alex Kemp,PHO00,State Farm Stadium
+2025092800,4,REG,PIT,24,MIN,21,2025-09-28,09:30,0,outdoors,grass,61,5,Mike Tomlin,Kevin O'Connell,Brad Allen,PIT00,Acrisure Stadium
+2025092801,4,REG,ATL,34,WAS,27,2025-09-28,13:00,0,closed,fieldturf,NA,NA,Raheem Morris,Dan Quinn,Scott Novak,ATL97,Mercedes-Benz Stadium
+2025092802,4,REG,BUF,31,NO,19,2025-09-28,13:00,0,outdoors,a_turf,73,7,Sean McDermott,Kellen Moore,Land Clark,BUF00,New Era Field
+2025092803,4,REG,DET,34,CLE,10,2025-09-28,13:00,0,dome,fieldturf,NA,NA,Dan Campbell,Kevin Stefanski,Shawn Smith,DET00,Ford Field
+2025092804,4,REG,HOU,26,TEN,0,2025-09-28,13:00,0,closed,astroturf,NA,NA,DeMeco Ryans,Brian Callahan,Brad Rogers,HOU00,NRG Stadium
+2025092805,4,REG,NE,42,CAR,13,2025-09-28,13:00,0,outdoors,fieldturf,76,7,Mike Vrabel,Dave Canales,Bill Vinovich,BOS00,Gillette Stadium
+2025092806,4,REG,NYG,21,LAC,18,2025-09-28,13:00,0,outdoors,fieldturf,81,4,Brian Daboll,Jim Harbaugh,Shawn Hochuli,NYC01,MetLife Stadium
+2025092807,4,REG,TB,25,PHI,31,2025-09-28,13:00,0,outdoors,grass,88,6,Todd Bowles,Nick Sirianni,Alan Eck,TAM00,Raymond James Stadium
+2025092808,4,REG,LA,27,IND,20,2025-09-28,16:05,0,dome,matrixturf,NA,NA,Sean McVay,Shane Steichen,Carl Cheffers,LAX01,SoFi Stadium
+2025092809,4,REG,SF,21,JAX,26,2025-09-28,16:05,0,outdoors,grass,72,7,Kyle Shanahan,Liam Coen,Clete Blakeman,SFO01,Levi's Stadium
+2025092810,4,REG,KC,37,BAL,20,2025-09-28,16:25,0,outdoors,grass,89,10,Andy Reid,John Harbaugh,Clay Martin,KAN00,GEHA Field at Arrowhead Stadium
+2025092811,4,REG,LV,24,CHI,25,2025-09-28,16:25,0,dome,grass,NA,NA,Pete Carroll,Ben Johnson,Adrian Hill,VEG00,Allegiant Stadium
+2025092812,4,REG,DAL,40,GB,40,2025-09-28,20:20,1,closed,matrixturf,NA,NA,Brian Schottenheimer,Matt LaFleur,Ron Torbert,DAL00,AT&T Stadium
+2025092900,4,REG,MIA,27,NYJ,21,2025-09-29,19:15,0,outdoors,grass,88,17,Mike McDaniel,Aaron Glenn,Craig Wrolstad,MIA00,Hard Rock Stadium
+2025092901,4,REG,DEN,28,CIN,3,2025-09-29,20:15,0,outdoors,grass,66,12,Sean Payton,Zac Taylor,Alex Moore,DEN00,Empower Field at Mile High
+2025100200,5,REG,LA,23,SF,26,2025-10-02,20:15,1,dome,matrixturf,NA,NA,Sean McVay,Kyle Shanahan,Bill Vinovich,LAX01,SoFi Stadium
+2025100500,5,REG,CLE,17,MIN,21,2025-10-05,09:30,0,outdoors,grass,61,14,Kevin Stefanski,Kevin O'Connell,Scott Novak,CLE00,FirstEnergy Stadium
+2025100501,5,REG,BAL,10,HOU,44,2025-10-05,13:00,0,outdoors,grass,78,2,John Harbaugh,DeMeco Ryans,Land Clark,BAL00,M&T Bank Stadium
+2025100502,5,REG,CAR,27,MIA,24,2025-10-05,13:00,0,outdoors,grass,77,8,Dave Canales,Mike McDaniel,Clay Martin,CAR00,Bank of America Stadium
+2025100503,5,REG,IND,40,LV,6,2025-10-05,13:00,0,closed,fieldturf,NA,NA,Shane Steichen,Pete Carroll,Alex Kemp,IND00,Lucas Oil Stadium
+2025100504,5,REG,NO,26,NYG,14,2025-10-05,13:00,0,dome,sportturf,NA,NA,Kellen Moore,Brian Daboll,Alan Eck,NOR00,Mercedes-Benz Superdome
+2025100505,5,REG,NYJ,22,DAL,37,2025-10-05,13:00,0,outdoors,fieldturf,82,3,Aaron Glenn,Brian Schottenheimer,Alex Moore,NYC01,MetLife Stadium
+2025100506,5,REG,PHI,17,DEN,21,2025-10-05,13:00,0,outdoors,grass,80,6,Nick Sirianni,Sean Payton,Adrian Hill,PHI00,Lincoln Financial Field
+2025100507,5,REG,ARI,21,TEN,22,2025-10-05,16:05,0,closed,grass,NA,NA,Jonathan Gannon,Brian Callahan,Shawn Smith,PHO00,State Farm Stadium
+2025100508,5,REG,SEA,35,TB,38,2025-10-05,16:05,0,outdoors,fieldturf,61,8,Mike Macdonald,Todd Bowles,Craig Wrolstad,SEA00,Lumen Field
+2025100509,5,REG,CIN,24,DET,37,2025-10-05,16:25,0,outdoors,fieldturf,84,7,Zac Taylor,Dan Campbell,Carl Cheffers,CIN00,Paycor Stadium
+2025100510,5,REG,LAC,10,WAS,27,2025-10-05,16:25,0,dome,matrixturf,NA,NA,Jim Harbaugh,Dan Quinn,John Hussey,LAX01,SoFi Stadium
+2025100511,5,REG,BUF,20,NE,23,2025-10-05,20:20,0,outdoors,a_turf,66,3,Sean McDermott,Mike Vrabel,Shawn Hochuli,BUF00,New Era Field
+2025100600,5,REG,JAX,31,KC,28,2025-10-06,20:15,0,outdoors,grass,80,12,Liam Coen,Andy Reid,Brad Rogers,JAX00,TIAA Bank Stadium
+2025100900,6,REG,NYG,34,PHI,17,2025-10-09,20:15,0,outdoors,fieldturf,53,3,Brian Daboll,Nick Sirianni,Clete Blakeman,NYC01,MetLife Stadium
+2025101200,6,REG,NYJ,11,DEN,13,2025-10-12,09:30,0,outdoors,grass,59,6,Aaron Glenn,Sean Payton,Land Clark,NYC01,MetLife Stadium
+2025101201,6,REG,BAL,3,LA,17,2025-10-12,13:00,0,outdoors,grass,64,15,John Harbaugh,Sean McVay,Alex Kemp,BAL00,M&T Bank Stadium
+2025101202,6,REG,CAR,30,DAL,27,2025-10-12,13:00,0,outdoors,grass,68,15,Dave Canales,Brian Schottenheimer,John Hussey,CAR00,Bank of America Stadium
+2025101203,6,REG,IND,31,ARI,27,2025-10-12,13:00,0,closed,fieldturf,NA,NA,Shane Steichen,Jonathan Gannon,Shawn Hochuli,IND00,Lucas Oil Stadium
+2025101204,6,REG,JAX,12,SEA,20,2025-10-12,13:00,0,outdoors,grass,76,8,Liam Coen,Mike Macdonald,Clay Martin,JAX00,TIAA Bank Stadium
+2025101205,6,REG,MIA,27,LAC,29,2025-10-12,13:00,0,outdoors,grass,85,4,Mike McDaniel,Jim Harbaugh,Bill Vinovich,MIA00,Hard Rock Stadium
+2025101210,6,REG,NO,19,NE,25,2025-10-12,13:00,0,dome,sportturf,NA,NA,Kellen Moore,Mike Vrabel,Adrian Hill,NOR00,Mercedes-Benz Superdome
+2025101206,6,REG,PIT,23,CLE,9,2025-10-12,13:00,0,outdoors,grass,64,8,Mike Tomlin,Kevin Stefanski,Ron Torbert,PIT00,Acrisure Stadium
+2025101208,6,REG,LV,20,TEN,10,2025-10-12,16:05,0,dome,grass,NA,NA,Pete Carroll,Brian Callahan,Carl Cheffers,VEG00,Allegiant Stadium
+2025101209,6,REG,GB,27,CIN,18,2025-10-12,16:25,0,outdoors,grass,64,14,Matt LaFleur,Zac Taylor,Brad Allen,GNB00,Lambeau Field
+2025101207,6,REG,TB,30,SF,19,2025-10-12,16:25,0,outdoors,grass,82,10,Todd Bowles,Kyle Shanahan,Brad Rogers,TAM00,Raymond James Stadium
+2025101211,6,REG,KC,30,DET,17,2025-10-12,20:20,0,outdoors,grass,85,13,Andy Reid,Dan Campbell,Craig Wrolstad,KAN00,GEHA Field at Arrowhead Stadium
+2025101300,6,REG,ATL,24,BUF,14,2025-10-13,19:15,0,closed,fieldturf,NA,NA,Raheem Morris,Sean McDermott,Shawn Smith,ATL97,Mercedes-Benz Stadium
+2025101301,6,REG,WAS,24,CHI,25,2025-10-13,20:15,0,outdoors,grass,59,12,Dan Quinn,Ben Johnson,Alex Moore,WAS00,FedExField
+2025101600,7,REG,CIN,33,PIT,31,2025-10-16,20:15,0,outdoors,fieldturf,60,5,Zac Taylor,Mike Tomlin,Clay Martin,CIN00,Paycor Stadium
+2025101900,7,REG,JAX,7,LA,35,2025-10-19,09:30,0,outdoors,grass,59,9,Liam Coen,Sean McVay,Adrian Hill,JAX00,TIAA Bank Stadium
+2025101901,7,REG,CHI,26,NO,14,2025-10-19,13:00,0,outdoors,grass,49,8,Ben Johnson,Kellen Moore,Scott Novak,CHI98,Soldier Field
+2025101902,7,REG,CLE,31,MIA,6,2025-10-19,13:00,0,outdoors,grass,65,17,Kevin Stefanski,Mike McDaniel,Shawn Hochuli,CLE00,FirstEnergy Stadium
+2025101903,7,REG,KC,31,LV,0,2025-10-19,13:00,0,outdoors,grass,57,9,Andy Reid,Pete Carroll,Clete Blakeman,KAN00,GEHA Field at Arrowhead Stadium
+2025101904,7,REG,MIN,22,PHI,28,2025-10-19,13:00,0,dome,sportturf,NA,NA,Kevin O'Connell,Nick Sirianni,Bill Vinovich,MIN01,U.S. Bank Stadium
+2025101905,7,REG,NYJ,6,CAR,13,2025-10-19,13:00,0,outdoors,fieldturf,71,13,Aaron Glenn,Dave Canales,Brad Rogers,NYC01,MetLife Stadium
+2025101906,7,REG,TEN,13,NE,31,2025-10-19,13:00,0,outdoors,grass,60,18,Brian Callahan,Mike Vrabel,Craig Wrolstad,NAS00,Nissan Stadium
+2025101907,7,REG,DEN,33,NYG,32,2025-10-19,16:05,0,outdoors,grass,72,3,Sean Payton,Brian Daboll,Brad Allen,DEN00,Empower Field at Mile High
+2025101908,7,REG,LAC,24,IND,38,2025-10-19,16:05,0,dome,matrixturf,NA,NA,Jim Harbaugh,Shane Steichen,Alan Eck,LAX01,SoFi Stadium
+2025101909,7,REG,ARI,23,GB,27,2025-10-19,16:25,0,closed,grass,NA,NA,Jonathan Gannon,Matt LaFleur,Alex Moore,PHO00,State Farm Stadium
+2025101910,7,REG,DAL,44,WAS,22,2025-10-19,16:25,0,closed,matrixturf,NA,NA,Brian Schottenheimer,Dan Quinn,Alex Kemp,DAL00,AT&T Stadium
+2025101911,7,REG,SF,20,ATL,10,2025-10-19,20:20,0,outdoors,grass,74,5,Kyle Shanahan,Raheem Morris,Ron Torbert,SFO01,Levi's Stadium
+2025102000,7,REG,DET,24,TB,9,2025-10-20,19:00,0,dome,fieldturf,NA,NA,Dan Campbell,Todd Bowles,John Hussey,DET00,Ford Field
+2025102001,7,REG,SEA,27,HOU,19,2025-10-20,22:00,0,outdoors,fieldturf,56,5,Mike Macdonald,DeMeco Ryans,Carl Cheffers,SEA00,Lumen Field
+2025102300,8,REG,LAC,37,MIN,10,2025-10-23,20:15,0,dome,matrixturf,NA,NA,Jim Harbaugh,Kevin O'Connell,Clete Blakeman,LAX01,SoFi Stadium
+2025102600,8,REG,ATL,10,MIA,34,2025-10-26,13:00,0,closed,fieldturf,NA,NA,Raheem Morris,Mike McDaniel,John Hussey,ATL97,Mercedes-Benz Stadium
+2025102601,8,REG,BAL,30,CHI,16,2025-10-26,13:00,0,outdoors,grass,60,2,John Harbaugh,Ben Johnson,Shawn Smith,BAL00,M&T Bank Stadium
+2025102602,8,REG,CAR,9,BUF,40,2025-10-26,13:00,0,outdoors,grass,63,9,Dave Canales,Sean McDermott,Craig Wrolstad,CAR00,Bank of America Stadium
+2025102603,8,REG,CIN,38,NYJ,39,2025-10-26,13:00,0,outdoors,fieldturf,57,8,Zac Taylor,Aaron Glenn,Scott Novak,CIN00,Paycor Stadium
+2025102604,8,REG,HOU,26,SF,15,2025-10-26,13:00,0,closed,astroturf,NA,NA,DeMeco Ryans,Kyle Shanahan,Alan Eck,HOU00,NRG Stadium
+2025102605,8,REG,NE,32,CLE,13,2025-10-26,13:00,0,outdoors,fieldturf,53,7,Mike Vrabel,Kevin Stefanski,Alex Moore,BOS00,Gillette Stadium
+2025102606,8,REG,PHI,38,NYG,20,2025-10-26,13:00,0,outdoors,grass,60,4,Nick Sirianni,Brian Daboll,Brad Rogers,PHI00,Lincoln Financial Field
+2025102607,8,REG,NO,3,TB,23,2025-10-26,16:05,0,dome,sportturf,NA,NA,Kellen Moore,Todd Bowles,Ron Torbert,NOR00,Mercedes-Benz Superdome
+2025102608,8,REG,DEN,44,DAL,24,2025-10-26,16:25,0,outdoors,grass,67,4,Sean Payton,Brian Schottenheimer,Carl Cheffers,DEN00,Empower Field at Mile High
+2025102609,8,REG,IND,38,TEN,14,2025-10-26,16:25,0,closed,fieldturf,NA,NA,Shane Steichen,Brian Callahan,Land Clark,IND00,Lucas Oil Stadium
+2025102610,8,REG,PIT,25,GB,35,2025-10-26,20:20,0,outdoors,grass,46,5,Mike Tomlin,Matt LaFleur,Shawn Hochuli,PIT00,Acrisure Stadium
+2025102700,8,REG,KC,28,WAS,7,2025-10-27,20:15,0,outdoors,grass,54,8,Andy Reid,Dan Quinn,Brad Allen,KAN00,GEHA Field at Arrowhead Stadium
+2025103000,9,REG,MIA,6,BAL,28,2025-10-30,20:15,0,outdoors,grass,73,5,Mike McDaniel,John Harbaugh,Scott Novak,MIA00,Hard Rock Stadium
+2025110200,9,REG,CIN,42,CHI,47,2025-11-02,13:00,0,outdoors,fieldturf,50,6,Zac Taylor,Ben Johnson,Clete Blakeman,CIN00,Paycor Stadium
+2025110201,9,REG,DET,24,MIN,27,2025-11-02,13:00,0,dome,fieldturf,NA,NA,Dan Campbell,Kevin O'Connell,Clay Martin,DET00,Ford Field
+2025110202,9,REG,GB,13,CAR,16,2025-11-02,13:00,0,outdoors,grass,47,15,Matt LaFleur,Dave Canales,Land Clark,GNB00,Lambeau Field
+2025110203,9,REG,HOU,15,DEN,18,2025-11-02,13:00,0,closed,astroturf,NA,NA,DeMeco Ryans,Sean Payton,Ron Torbert,HOU00,NRG Stadium
+2025110204,9,REG,NE,24,ATL,23,2025-11-02,13:00,0,outdoors,fieldturf,52,7,Mike Vrabel,Raheem Morris,Brad Allen,BOS00,Gillette Stadium
+2025110205,9,REG,NYG,24,SF,34,2025-11-02,13:00,0,outdoors,fieldturf,56,5,Brian Daboll,Kyle Shanahan,John Hussey,NYC01,MetLife Stadium
+2025110206,9,REG,PIT,27,IND,20,2025-11-02,13:00,0,outdoors,grass,56,2,Mike Tomlin,Shane Steichen,Craig Wrolstad,PIT00,Acrisure Stadium
+2025110207,9,REG,TEN,20,LAC,27,2025-11-02,13:00,0,outdoors,grass,46,5,Brian Callahan,Jim Harbaugh,Alex Kemp,NAS00,Nissan Stadium
+2025110208,9,REG,LA,34,NO,10,2025-11-02,16:05,0,dome,matrixturf,NA,NA,Sean McVay,Kellen Moore,Shawn Smith,LAX01,SoFi Stadium
+2025110209,9,REG,LV,29,JAX,30,2025-11-02,16:05,1,dome,grass,NA,NA,Pete Carroll,Liam Coen,Alan Eck,VEG00,Allegiant Stadium
+2025110210,9,REG,BUF,28,KC,21,2025-11-02,16:25,0,outdoors,a_turf,54,6,Sean McDermott,Andy Reid,Carl Cheffers,BUF00,New Era Field
+2025110211,9,REG,WAS,14,SEA,38,2025-11-02,20:20,0,outdoors,grass,53,3,Dan Quinn,Mike Macdonald,Bill Vinovich,WAS00,FedExField
+2025110300,9,REG,DAL,17,ARI,27,2025-11-03,20:15,0,closed,matrixturf,NA,NA,Brian Schottenheimer,Jonathan Gannon,Adrian Hill,DAL00,AT&T Stadium
+2025110600,10,REG,DEN,10,LV,7,2025-11-06,20:15,0,outdoors,grass,60,10,Sean Payton,Pete Carroll,Bill Vinovich,DEN00,Empower Field at Mile High
+2025110900,10,REG,IND,31,ATL,25,2025-11-09,09:30,1,closed,grass,46,2,Shane Steichen,Raheem Morris,Clete Blakeman,IND00,Lucas Oil Stadium
+2025110901,10,REG,CAR,7,NO,17,2025-11-09,13:00,0,outdoors,grass,73,15,Dave Canales,Kellen Moore,Brad Allen,CAR00,Bank of America Stadium
+2025110902,10,REG,CHI,24,NYG,20,2025-11-09,13:00,0,outdoors,grass,33,10,Ben Johnson,Brian Daboll,Adrian Hill,CHI98,Soldier Field
+2025110903,10,REG,HOU,36,JAX,29,2025-11-09,13:00,0,closed,astroturf,NA,NA,DeMeco Ryans,Liam Coen,Alex Moore,HOU00,NRG Stadium
+2025110904,10,REG,MIA,30,BUF,13,2025-11-09,13:00,0,outdoors,grass,84,6,Mike McDaniel,Sean McDermott,Ron Torbert,MIA00,Hard Rock Stadium
+2025110905,10,REG,MIN,19,BAL,27,2025-11-09,13:00,0,dome,sportturf,NA,NA,Kevin O'Connell,John Harbaugh,Shawn Hochuli,MIN01,U.S. Bank Stadium
+2025110906,10,REG,NYJ,27,CLE,20,2025-11-09,13:00,0,outdoors,fieldturf,62,12,Aaron Glenn,Kevin Stefanski,Shawn Smith,NYC01,MetLife Stadium
+2025110907,10,REG,TB,23,NE,28,2025-11-09,13:00,0,outdoors,grass,82,11,Todd Bowles,Mike Vrabel,Alex Kemp,TAM00,Raymond James Stadium
+2025110908,10,REG,SEA,44,ARI,22,2025-11-09,16:05,0,outdoors,fieldturf,59,5,Mike Macdonald,Jonathan Gannon,Alan Eck,SEA00,Lumen Field
+2025110909,10,REG,SF,26,LA,42,2025-11-09,16:25,0,outdoors,grass,77,3,Kyle Shanahan,Sean McVay,Land Clark,SFO01,Levi's Stadium
+2025110910,10,REG,WAS,22,DET,44,2025-11-09,16:25,0,outdoors,grass,64,9,Dan Quinn,Dan Campbell,Scott Novak,WAS00,FedExField
+2025110911,10,REG,LAC,25,PIT,10,2025-11-09,20:20,0,dome,matrixturf,NA,NA,Jim Harbaugh,Mike Tomlin,Brad Rogers,LAX01,SoFi Stadium
+2025111000,10,REG,GB,7,PHI,10,2025-11-10,20:15,0,outdoors,grass,33,9,Matt LaFleur,Nick Sirianni,Clay Martin,GNB00,Lambeau Field
+2025111300,11,REG,NE,27,NYJ,14,2025-11-13,20:15,0,outdoors,fieldturf,39,9,Mike Vrabel,Aaron Glenn,Alan Eck,BOS00,Gillette Stadium
+2025111600,11,REG,MIA,16,WAS,13,2025-11-16,09:30,1,outdoors,grass,NA,NA,Mike McDaniel,Dan Quinn,Shawn Smith,MIA00,Hard Rock Stadium
+2025111601,11,REG,ATL,27,CAR,30,2025-11-16,13:00,1,closed,fieldturf,NA,NA,Raheem Morris,Dave Canales,Clay Martin,ATL97,Mercedes-Benz Stadium
+2025111602,11,REG,BUF,44,TB,32,2025-11-16,13:00,0,outdoors,a_turf,38,20,Sean McDermott,Todd Bowles,Alex Moore,BUF00,New Era Field
+2025111603,11,REG,JAX,35,LAC,6,2025-11-16,13:00,0,outdoors,grass,74,9,Liam Coen,Jim Harbaugh,Craig Wrolstad,JAX00,TIAA Bank Stadium
+2025111604,11,REG,MIN,17,CHI,19,2025-11-16,13:00,0,dome,sportturf,NA,NA,Kevin O'Connell,Ben Johnson,Brad Rogers,MIN01,U.S. Bank Stadium
+2025111605,11,REG,NYG,20,GB,27,2025-11-16,13:00,0,outdoors,fieldturf,55,17,Brian Daboll,Matt LaFleur,Scott Novak,NYC01,MetLife Stadium
+2025111606,11,REG,PIT,34,CIN,12,2025-11-16,13:00,0,outdoors,grass,46,17,Mike Tomlin,Zac Taylor,Bill Vinovich,PIT00,Acrisure Stadium
+2025111607,11,REG,TEN,13,HOU,16,2025-11-16,13:00,0,outdoors,grass,64,8,Brian Callahan,DeMeco Ryans,Shawn Hochuli,NAS00,Nissan Stadium
+2025111608,11,REG,ARI,22,SF,41,2025-11-16,16:05,0,closed,grass,NA,NA,Jonathan Gannon,Kyle Shanahan,Carl Cheffers,PHO00,State Farm Stadium
+2025111609,11,REG,LA,21,SEA,19,2025-11-16,16:05,0,dome,matrixturf,NA,NA,Sean McVay,Mike Macdonald,John Hussey,LAX01,SoFi Stadium
+2025111610,11,REG,CLE,16,BAL,23,2025-11-16,16:25,0,outdoors,grass,44,20,Kevin Stefanski,John Harbaugh,Land Clark,CLE00,FirstEnergy Stadium
+2025111611,11,REG,DEN,22,KC,19,2025-11-16,16:25,0,outdoors,grass,70,6,Sean Payton,Andy Reid,Adrian Hill,DEN00,Empower Field at Mile High
+2025111612,11,REG,PHI,16,DET,9,2025-11-16,20:20,0,outdoors,grass,45,15,Nick Sirianni,Dan Campbell,Alex Kemp,PHI00,Lincoln Financial Field
+2025111700,11,REG,LV,16,DAL,33,2025-11-17,20:15,0,dome,grass,NA,NA,Pete Carroll,Brian Schottenheimer,Brad Allen,VEG00,Allegiant Stadium
+2025112000,12,REG,HOU,23,BUF,19,2025-11-20,20:15,0,closed,astroturf,NA,NA,DeMeco Ryans,Sean McDermott,Adrian Hill,HOU00,NRG Stadium
+2025112300,12,REG,BAL,23,NYJ,10,2025-11-23,13:00,0,outdoors,grass,54,3,John Harbaugh,Aaron Glenn,Clete Blakeman,BAL00,M&T Bank Stadium
+2025112301,12,REG,CHI,31,PIT,28,2025-11-23,13:00,0,outdoors,grass,51,3,Ben Johnson,Mike Tomlin,John Hussey,CHI98,Soldier Field
+2025112302,12,REG,CIN,20,NE,26,2025-11-23,13:00,0,outdoors,fieldturf,54,7,Zac Taylor,Mike Vrabel,Land Clark,CIN00,Paycor Stadium
+2025112303,12,REG,DET,34,NYG,27,2025-11-23,13:00,1,dome,fieldturf,NA,NA,Dan Campbell,Brian Daboll,Craig Wrolstad,DET00,Ford Field
+2025112304,12,REG,GB,23,MIN,6,2025-11-23,13:00,0,outdoors,grass,43,10,Matt LaFleur,Kevin O'Connell,Carl Cheffers,GNB00,Lambeau Field
+2025112305,12,REG,KC,23,IND,20,2025-11-23,13:00,1,outdoors,grass,NA,NA,Andy Reid,Shane Steichen,Alex Moore,KAN00,GEHA Field at Arrowhead Stadium
+2025112306,12,REG,TEN,24,SEA,30,2025-11-23,13:00,0,outdoors,grass,55,1,Brian Callahan,Mike Macdonald,Ron Torbert,NAS00,Nissan Stadium
+2025112307,12,REG,ARI,24,JAX,27,2025-11-23,16:05,1,closed,grass,NA,NA,Jonathan Gannon,Liam Coen,Scott Novak,PHO00,State Farm Stadium
+2025112308,12,REG,LV,10,CLE,24,2025-11-23,16:05,0,dome,grass,NA,NA,Pete Carroll,Kevin Stefanski,Shawn Hochuli,VEG00,Allegiant Stadium
+2025112309,12,REG,DAL,24,PHI,21,2025-11-23,16:25,0,closed,matrixturf,NA,NA,Brian Schottenheimer,Nick Sirianni,Bill Vinovich,DAL00,AT&T Stadium
+2025112310,12,REG,NO,10,ATL,24,2025-11-23,16:25,0,dome,sportturf,NA,NA,Kellen Moore,Raheem Morris,Brad Rogers,NOR00,Mercedes-Benz Superdome
+2025112311,12,REG,LA,34,TB,7,2025-11-23,20:20,0,dome,matrixturf,NA,NA,Sean McVay,Todd Bowles,Clay Martin,LAX01,SoFi Stadium
+2025112400,12,REG,SF,20,CAR,9,2025-11-24,20:15,0,outdoors,grass,58,3,Kyle Shanahan,Dave Canales,Alex Kemp,SFO01,Levi's Stadium
+2025112700,13,REG,DET,24,GB,31,2025-11-27,13:00,0,dome,fieldturf,NA,NA,Dan Campbell,Matt LaFleur,Ron Torbert,DET00,Ford Field
+2025112701,13,REG,DAL,31,KC,28,2025-11-27,16:30,0,closed,matrixturf,NA,NA,Brian Schottenheimer,Andy Reid,John Hussey,DAL00,AT&T Stadium
+2025112702,13,REG,BAL,14,CIN,32,2025-11-27,20:20,0,outdoors,grass,38,11,John Harbaugh,Zac Taylor,Craig Wrolstad,BAL00,M&T Bank Stadium
+2025112800,13,REG,PHI,15,CHI,24,2025-11-28,15:00,0,outdoors,grass,42,18,Nick Sirianni,Ben Johnson,Carl Cheffers,PHI00,Lincoln Financial Field
+2025113000,13,REG,CAR,31,LA,28,2025-11-30,13:00,0,outdoors,grass,45,3,Dave Canales,Sean McVay,Scott Novak,CAR00,Bank of America Stadium
+2025113001,13,REG,CLE,8,SF,26,2025-11-30,13:00,0,outdoors,grass,35,20,Kevin Stefanski,Kyle Shanahan,Brad Allen,CLE00,FirstEnergy Stadium
+2025113002,13,REG,IND,16,HOU,20,2025-11-30,13:00,0,closed,fieldturf,NA,NA,Shane Steichen,DeMeco Ryans,Clay Martin,IND00,Lucas Oil Stadium
+2025113003,13,REG,MIA,21,NO,17,2025-11-30,13:00,0,outdoors,grass,76,10,Mike McDaniel,Kellen Moore,Alan Eck,MIA00,Hard Rock Stadium
+2025113004,13,REG,NYJ,27,ATL,24,2025-11-30,13:00,0,outdoors,fieldturf,43,8,Aaron Glenn,Raheem Morris,Shawn Hochuli,NYC01,MetLife Stadium
+2025113005,13,REG,TB,20,ARI,17,2025-11-30,13:00,0,outdoors,grass,80,8,Todd Bowles,Jonathan Gannon,Bill Vinovich,TAM00,Raymond James Stadium
+2025113006,13,REG,TEN,3,JAX,25,2025-11-30,13:00,0,outdoors,grass,38,7,Brian Callahan,Liam Coen,Brad Rogers,NAS00,Nissan Stadium
+2025113007,13,REG,SEA,26,MIN,0,2025-11-30,16:05,0,outdoors,fieldturf,45,2,Mike Macdonald,Kevin O'Connell,Clete Blakeman,SEA00,Lumen Field
+2025113008,13,REG,LAC,31,LV,14,2025-11-30,16:25,0,dome,matrixturf,NA,NA,Jim Harbaugh,Pete Carroll,Alex Moore,LAX01,SoFi Stadium
+2025113009,13,REG,PIT,7,BUF,26,2025-11-30,16:25,0,outdoors,grass,34,16,Mike Tomlin,Sean McDermott,Alex Kemp,PIT00,Acrisure Stadium
+2025113010,13,REG,WAS,26,DEN,27,2025-11-30,20:20,1,outdoors,grass,40,13,Dan Quinn,Sean Payton,Land Clark,WAS00,FedExField
+2025120100,13,REG,NE,33,NYG,15,2025-12-01,20:15,0,outdoors,fieldturf,30,5,Mike Vrabel,Brian Daboll,Alex Kemp,BOS00,Gillette Stadium
+2025120400,14,REG,DET,44,DAL,30,2025-12-04,20:15,0,dome,fieldturf,NA,NA,Dan Campbell,Brian Schottenheimer,Shawn Hochuli,DET00,Ford Field
+2025120700,14,REG,ATL,9,SEA,37,2025-12-07,13:00,0,closed,fieldturf,NA,NA,Raheem Morris,Mike Macdonald,Alex Kemp,ATL97,Mercedes-Benz Stadium
+2025120701,14,REG,BAL,22,PIT,27,2025-12-07,13:00,0,outdoors,grass,44,6,John Harbaugh,Mike Tomlin,Alex Moore,BAL00,M&T Bank Stadium
+2025120710,14,REG,BUF,39,CIN,34,2025-12-07,13:00,0,outdoors,a_turf,31,12,Sean McDermott,Zac Taylor,Brad Rogers,BUF00,New Era Field
+2025120702,14,REG,CLE,29,TEN,31,2025-12-07,13:00,0,outdoors,grass,33,6,Kevin Stefanski,Brian Callahan,Carl Cheffers,CLE00,FirstEnergy Stadium
+2025120704,14,REG,JAX,36,IND,19,2025-12-07,13:00,0,outdoors,grass,61,7,Liam Coen,Shane Steichen,John Hussey,JAX00,TIAA Bank Stadium
+2025120705,14,REG,MIN,31,WAS,0,2025-12-07,13:00,0,dome,sportturf,NA,NA,Kevin O'Connell,Dan Quinn,Brad Allen,MIN01,U.S. Bank Stadium
+2025120706,14,REG,NYJ,10,MIA,34,2025-12-07,13:00,0,outdoors,fieldturf,41,6,Aaron Glenn,Mike McDaniel,Bill Vinovich,NYC01,MetLife Stadium
+2025120707,14,REG,TB,20,NO,24,2025-12-07,13:00,0,outdoors,grass,73,6,Todd Bowles,Kellen Moore,Clete Blakeman,TAM00,Raymond James Stadium
+2025120708,14,REG,LV,17,DEN,24,2025-12-07,16:05,0,dome,grass,NA,NA,Pete Carroll,Sean Payton,Shawn Smith,VEG00,Allegiant Stadium
+2025120709,14,REG,ARI,17,LA,45,2025-12-07,16:25,0,closed,grass,NA,NA,Jonathan Gannon,Sean McVay,Ron Torbert,PHO00,State Farm Stadium
+2025120703,14,REG,GB,28,CHI,21,2025-12-07,16:25,0,outdoors,grass,16,9,Matt LaFleur,Ben Johnson,Craig Wrolstad,GNB00,Lambeau Field
+2025120711,14,REG,KC,10,HOU,20,2025-12-07,20:20,0,outdoors,grass,27,8,Andy Reid,DeMeco Ryans,Alan Eck,KAN00,GEHA Field at Arrowhead Stadium
+2025120800,14,REG,LAC,22,PHI,19,2025-12-08,20:15,1,dome,matrixturf,NA,NA,Jim Harbaugh,Nick Sirianni,Scott Novak,LAX01,SoFi Stadium
+2025121100,15,REG,TB,28,ATL,29,2025-12-11,20:15,0,outdoors,grass,56,5,Todd Bowles,Raheem Morris,Carl Cheffers,TAM00,Raymond James Stadium
+2025121400,15,REG,CHI,31,CLE,3,2025-12-14,13:00,0,outdoors,grass,8,6,Ben Johnson,Kevin Stefanski,Ron Torbert,CHI98,Soldier Field
+2025121401,15,REG,CIN,0,BAL,24,2025-12-14,13:00,0,outdoors,fieldturf,10,7,Zac Taylor,John Harbaugh,Brad Allen,CIN00,Paycor Stadium
+2025121402,15,REG,HOU,40,ARI,20,2025-12-14,13:00,0,closed,astroturf,NA,NA,DeMeco Ryans,Jonathan Gannon,Clete Blakeman,HOU00,NRG Stadium
+2025121403,15,REG,JAX,48,NYJ,20,2025-12-14,13:00,0,outdoors,grass,70,11,Liam Coen,Aaron Glenn,Shawn Smith,JAX00,TIAA Bank Stadium
+2025121404,15,REG,KC,13,LAC,16,2025-12-14,13:00,0,outdoors,grass,NA,NA,Andy Reid,Jim Harbaugh,Shawn Hochuli,KAN00,GEHA Field at Arrowhead Stadium
+2025121405,15,REG,NE,31,BUF,35,2025-12-14,13:00,0,outdoors,fieldturf,32,6,Mike Vrabel,Sean McDermott,John Hussey,BOS00,Gillette Stadium
+2025121406,15,REG,NYG,21,WAS,29,2025-12-14,13:00,0,outdoors,fieldturf,27,13,Brian Daboll,Dan Quinn,Bill Vinovich,NYC01,MetLife Stadium
+2025121407,15,REG,PHI,31,LV,0,2025-12-14,13:00,0,outdoors,grass,30,20,Nick Sirianni,Pete Carroll,Clay Martin,PHI00,Lincoln Financial Field
+2025121408,15,REG,DEN,34,GB,26,2025-12-14,16:25,0,outdoors,grass,65,3,Sean Payton,Matt LaFleur,Brad Rogers,DEN00,Empower Field at Mile High
+2025121409,15,REG,LA,41,DET,34,2025-12-14,16:25,0,dome,matrixturf,NA,NA,Sean McVay,Dan Campbell,Alan Eck,LAX01,SoFi Stadium
+2025121410,15,REG,NO,20,CAR,17,2025-12-14,16:25,0,dome,sportturf,NA,NA,Kellen Moore,Dave Canales,Alex Moore,NOR00,Mercedes-Benz Superdome
+2025121411,15,REG,SEA,18,IND,16,2025-12-14,16:25,0,outdoors,fieldturf,51,9,Mike Macdonald,Shane Steichen,Adrian Hill,SEA00,Lumen Field
+2025121412,15,REG,SF,37,TEN,24,2025-12-14,16:25,0,outdoors,grass,54,4,Kyle Shanahan,Brian Callahan,Craig Wrolstad,SFO01,Levi's Stadium
+2025121413,15,REG,DAL,26,MIN,34,2025-12-14,20:20,0,closed,matrixturf,NA,NA,Brian Schottenheimer,Kevin O'Connell,Scott Novak,DAL00,AT&T Stadium
+2025121500,15,REG,PIT,28,MIA,15,2025-12-15,20:15,0,outdoors,grass,17,7,Mike Tomlin,Mike McDaniel,Land Clark,PIT00,Acrisure Stadium
+2025121800,16,REG,SEA,38,LA,37,2025-12-18,20:15,1,outdoors,fieldturf,51,17,Mike Macdonald,Sean McVay,Brad Allen,SEA00,Lumen Field
+2025122001,16,REG,WAS,18,PHI,29,2025-12-20,17:00,0,outdoors,grass,42,7,Dan Quinn,Nick Sirianni,Craig Wrolstad,WAS00,FedExField
+2025122000,16,REG,CHI,22,GB,16,2025-12-20,20:20,1,outdoors,grass,37,6,Ben Johnson,Matt LaFleur,Alex Kemp,CHI98,Soldier Field
+2025122103,16,REG,CAR,23,TB,20,2025-12-21,13:00,0,outdoors,grass,61,8,Dave Canales,Todd Bowles,Shawn Smith,CAR00,Bank of America Stadium
+2025122104,16,REG,CLE,20,BUF,23,2025-12-21,13:00,0,outdoors,grass,25,16,Kevin Stefanski,Sean McDermott,Bill Vinovich,CLE00,FirstEnergy Stadium
+2025122105,16,REG,DAL,17,LAC,34,2025-12-21,13:00,0,closed,matrixturf,NA,NA,Brian Schottenheimer,Jim Harbaugh,Alan Eck,DAL00,AT&T Stadium
+2025122113,16,REG,MIA,21,CIN,45,2025-12-21,13:00,0,outdoors,grass,81,7,Mike McDaniel,Zac Taylor,John Hussey,MIA00,Hard Rock Stadium
+2025122106,16,REG,NO,29,NYJ,6,2025-12-21,13:00,0,dome,sportturf,NA,NA,Kellen Moore,Aaron Glenn,Clay Martin,NOR00,Mercedes-Benz Superdome
+2025122107,16,REG,NYG,13,MIN,16,2025-12-21,13:00,0,outdoors,fieldturf,46,20,Brian Daboll,Kevin O'Connell,Alex Moore,NYC01,MetLife Stadium
+2025122108,16,REG,TEN,26,KC,9,2025-12-21,13:00,0,outdoors,grass,51,8,Brian Callahan,Andy Reid,Clete Blakeman,NAS00,Nissan Stadium
+2025122109,16,REG,ARI,19,ATL,26,2025-12-21,16:05,0,closed,grass,NA,NA,Jonathan Gannon,Raheem Morris,Land Clark,PHO00,State Farm Stadium
+2025122110,16,REG,DEN,20,JAX,34,2025-12-21,16:05,0,outdoors,grass,62,3,Sean Payton,Liam Coen,Shawn Hochuli,DEN00,Empower Field at Mile High
+2025122111,16,REG,DET,24,PIT,29,2025-12-21,16:25,0,dome,fieldturf,NA,NA,Dan Campbell,Mike Tomlin,Carl Cheffers,DET00,Ford Field
+2025122112,16,REG,HOU,23,LV,21,2025-12-21,16:25,0,closed,astroturf,NA,NA,DeMeco Ryans,Pete Carroll,Scott Novak,HOU00,NRG Stadium
+2025122102,16,REG,BAL,24,NE,28,2025-12-21,20:20,0,outdoors,grass,40,2,John Harbaugh,Mike Vrabel,Brad Rogers,BAL00,M&T Bank Stadium
+2025122200,16,REG,IND,27,SF,48,2025-12-22,20:15,0,closed,fieldturf,NA,NA,Shane Steichen,Kyle Shanahan,Ron Torbert,IND00,Lucas Oil Stadium
+2025122500,17,REG,WAS,23,DAL,30,2025-12-25,13:00,0,outdoors,grass,50,7,Dan Quinn,Brian Schottenheimer,Brad Rogers,WAS00,FedExField
+2025122501,17,REG,MIN,23,DET,10,2025-12-25,16:30,0,dome,sportturf,NA,NA,Kevin O'Connell,Dan Campbell,Shawn Smith,MIN01,U.S. Bank Stadium
+2025122502,17,REG,KC,13,DEN,20,2025-12-25,20:15,0,outdoors,grass,NA,NA,Andy Reid,Sean Payton,Bill Vinovich,KAN00,GEHA Field at Arrowhead Stadium
+2025122700,17,REG,LAC,16,HOU,20,2025-12-27,16:30,0,dome,matrixturf,NA,NA,Jim Harbaugh,DeMeco Ryans,Craig Wrolstad,LAX01,SoFi Stadium
+2025122701,17,REG,GB,24,BAL,41,2025-12-27,20:00,0,outdoors,grass,36,10,Matt LaFleur,John Harbaugh,Alan Eck,GNB00,Lambeau Field
+2025122800,17,REG,CAR,10,SEA,27,2025-12-28,13:00,0,outdoors,grass,43,2,Dave Canales,Mike Macdonald,Carl Cheffers,CAR00,Bank of America Stadium
+2025122801,17,REG,CIN,37,ARI,14,2025-12-28,13:00,0,outdoors,fieldturf,65,9,Zac Taylor,Jonathan Gannon,Clay Martin,CIN00,Paycor Stadium
+2025122805,17,REG,CLE,13,PIT,6,2025-12-28,13:00,0,outdoors,grass,45,14,Kevin Stefanski,Mike Tomlin,John Hussey,CLE00,FirstEnergy Stadium
+2025122806,17,REG,IND,17,JAX,23,2025-12-28,13:00,0,closed,fieldturf,NA,NA,Shane Steichen,Liam Coen,Brad Allen,IND00,Lucas Oil Stadium
+2025122807,17,REG,MIA,20,TB,17,2025-12-28,13:00,0,outdoors,grass,80,3,Mike McDaniel,Todd Bowles,Scott Novak,MIA00,Hard Rock Stadium
+2025122808,17,REG,NYJ,10,NE,42,2025-12-28,13:00,0,outdoors,fieldturf,29,4,Aaron Glenn,Mike Vrabel,Alex Kemp,NYC01,MetLife Stadium
+2025122809,17,REG,TEN,26,NO,34,2025-12-28,13:00,0,outdoors,grass,71,14,Brian Callahan,Kellen Moore,Adrian Hill,NAS00,Nissan Stadium
+2025122804,17,REG,LV,10,NYG,34,2025-12-28,16:05,0,dome,grass,NA,NA,Pete Carroll,Brian Daboll,Land Clark,VEG00,Allegiant Stadium
+2025122810,17,REG,BUF,12,PHI,13,2025-12-28,16:25,0,outdoors,a_turf,38,6,Sean McDermott,Nick Sirianni,Ron Torbert,BUF00,New Era Field
+2025122811,17,REG,SF,42,CHI,38,2025-12-28,20:20,0,outdoors,grass,53,5,Kyle Shanahan,Ben Johnson,Alex Moore,SFO01,Levi's Stadium
+2025122900,17,REG,ATL,27,LA,24,2025-12-29,20:15,0,closed,fieldturf,NA,NA,Raheem Morris,Sean McVay,Clete Blakeman,ATL97,Mercedes-Benz Stadium
+2026010300,18,REG,TB,16,CAR,14,2026-01-03,16:30,0,outdoors,grass,69,11,Todd Bowles,Dave Canales,Brad Allen,TAM00,Raymond James Stadium
+2026010301,18,REG,SF,3,SEA,13,2026-01-03,20:00,0,outdoors,grass,57,8,Kyle Shanahan,Mike Macdonald,Bill Vinovich,SFO01,Levi's Stadium
+2026010400,18,REG,ATL,NA,NO,NA,2026-01-04,13:00,NA,closed,fieldturf,NA,NA,Raheem Morris,Kellen Moore,NA,ATL97,Mercedes-Benz Stadium
+2026010403,18,REG,CIN,NA,CLE,NA,2026-01-04,13:00,NA,outdoors,fieldturf,NA,NA,Zac Taylor,Kevin Stefanski,NA,CIN00,Paycor Stadium
+2026010405,18,REG,HOU,NA,IND,NA,2026-01-04,13:00,NA,closed,astroturf,NA,NA,DeMeco Ryans,Shane Steichen,NA,HOU00,NRG Stadium
+2026010406,18,REG,JAX,NA,TEN,NA,2026-01-04,13:00,NA,outdoors,grass,NA,NA,Liam Coen,Brian Callahan,NA,JAX00,TIAA Bank Stadium
+2026010409,18,REG,MIN,NA,GB,NA,2026-01-04,13:00,NA,dome,sportturf,NA,NA,Kevin O'Connell,Matt LaFleur,NA,MIN01,U.S. Bank Stadium
+2026010411,18,REG,NYG,NA,DAL,NA,2026-01-04,13:00,NA,outdoors,fieldturf,NA,NA,Brian Daboll,Brian Schottenheimer,NA,NYC01,MetLife Stadium
+2026010401,18,REG,BUF,NA,NYJ,NA,2026-01-04,16:25,NA,outdoors,a_turf,NA,NA,Sean McDermott,Aaron Glenn,NA,BUF00,New Era Field
+2026010402,18,REG,CHI,NA,DET,NA,2026-01-04,16:25,NA,outdoors,grass,NA,NA,Ben Johnson,Dan Campbell,NA,CHI98,Soldier Field
+2026010404,18,REG,DEN,NA,LAC,NA,2026-01-04,16:25,NA,outdoors,grass,NA,NA,Sean Payton,Jim Harbaugh,NA,DEN00,Empower Field at Mile High
+2026010407,18,REG,LA,NA,ARI,NA,2026-01-04,16:25,NA,dome,matrixturf,NA,NA,Sean McVay,Jonathan Gannon,NA,LAX01,SoFi Stadium
+2026010408,18,REG,LV,NA,KC,NA,2026-01-04,16:25,NA,dome,grass,NA,NA,Pete Carroll,Andy Reid,NA,VEG00,Allegiant Stadium
+2026010410,18,REG,NE,NA,MIA,NA,2026-01-04,16:25,NA,outdoors,fieldturf,NA,NA,Mike Vrabel,Mike McDaniel,NA,BOS00,Gillette Stadium
+2026010412,18,REG,PHI,NA,WAS,NA,2026-01-04,16:25,NA,outdoors,grass,NA,NA,Nick Sirianni,Dan Quinn,NA,PHI00,Lincoln Financial Field
+2026010413,18,REG,PIT,NA,BAL,NA,2026-01-04,20:20,NA,outdoors,grass,NA,NA,Mike Tomlin,John Harbaugh,NA,PIT00,Acrisure Stadium
