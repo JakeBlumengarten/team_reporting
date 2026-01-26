@@ -2,7 +2,7 @@ library(nflfastR)
 library(tidyverse)
 library(readr)
 
-pbp_r <- load_pbp(2025)
+pbp_r <- load_pbp(2025) %>% filter(season_type == "REG")
 
 pbp_pass <- pbp_r%>%
   filter(pass == 1 & !is.na(yards_gained))

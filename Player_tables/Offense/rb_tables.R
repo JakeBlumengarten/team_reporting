@@ -2,7 +2,7 @@ library(nflfastR)
 library(tidyverse)
 library(readr)
 
-pbp_r <- load_pbp(2025)
+pbp_r <- load_pbp(2025) %>% filter(season_type == "REG")
 
 pbp_run <- pbp_r%>%
   filter(rush == 1 & !is.na(rushing_yards))

@@ -1,14 +1,14 @@
 library(shiny)
 library(tidyverse)
-library(nflfastR)
 library(DT)
+library(bslib)
+library(nflfastR)
 
 # ==============================================================================
 # 1. DATA PREP & CLEANING
 # ==============================================================================
 
-# --- Robust Team Name Fixer ---
-# Ensures that dropdown "LAR" matches data "LA", etc.
+# --- Helper: Robust Team Name Fixer ---
 fix_teams <- function(df) {
   team_map <- c(
     "LAR" = "LA", "STL" = "LA", "SD" = "LAC", "JAC" = "JAX", "OAK" = "LV",
@@ -24,63 +24,67 @@ fix_teams <- function(df) {
   return(df)
 }
 
+# --- Helper: Parse and Round ---
+# This cleans strings, handles numbers, and rounds to 3 places globally
+clean_numeric <- function(df) {
+  df %>% 
+    mutate(across(where(~ is.numeric(.) | is.character(.)), 
+                  ~ ifelse(is.na(as.numeric(gsub("[^0-9.-]", "", .))), ., 
+                           round(as.numeric(gsub("[^0-9.-]", "", .)), 3))))
+}
+
 # --- 1A. GLOSSARY ---
 glossary_data <- tibble::tribble(
   ~Variable, ~Description,
-  "EPA", "Expected Points Added. (Green = Top 20%).",
-  "Dakota", "Composite Score (EPA + CPOE).",
-  "Gap: Guard", "Yards running between Center/Tackle (A/B Gap).",
-  "Gap: Tackle", "Yards running off-tackle (C Gap).",
-  "Gap: End", "Yards running outside (D Gap/Sweep).",
-  "D1/D2/D3/D4", "Downs 1 through 4.",
-  "RZ Comp %", "Completion % inside the 20-yard line.",
-  "When Hit", "Performance when the QB is hit while throwing.",
-  "4th Down Conversion", "Success rate when going for it on 4th down (Rush/Pass only)."
+  "EPA", "Expected Points Added: Measures play impact on scoring potential. Elite offenses stay consistently positive.",
+  "Success Rate", "The % of plays with positive EPA. High rates indicate a 'Grinder' offense that stays on schedule.",
+  "Dakota", "Adjusted EPA + CPOE: A composite metric identifying the most efficient and accurate QBs.",
+  "CPOE", "Completion % Over Expected: Measures a QB's ability to complete difficult passes compared to the NFL average.",
+  "Expl_Pass", "Explosive Pass Rate: % of passes gaining 20+ yards. High rates indicate a vertical 'Boom-or-Bust' threat.",
+  "Air Yds/Pass", "Average distance the ball travels in the air per attempt. Distinguishes gunslingers from check-down passers.",
+  "Gap: Guard", "Inside Run: Yards gained between the Center and Guard (A/B Gaps). Measures interior line strength.",
+  "Gap: Tackle", "Off-Tackle: Yards gained outside the Guard but inside the Tackle (C Gap).",
+  "Gap: End", "Outside Run: Yards gained outside the Tackle (D Gap/Sweeps). Measures speed and edge blocking.",
+  "D1/D2/D3/D4", "Down-specific performance splits. Key for identifying 'Money Down' (3rd/4th) efficiency.",
+  "RZ Comp %", "Red Zone Accuracy: Completion percentage inside the 20-yard line where the field shrinks.",
+  "When Hit (WH)", "Pressure Performance: QB stats specifically when the passer is hit during the throw.",
+  "4th Down Conv", "The success rate on 4th down attempts. Indicates aggressive 'Go-for-it' coaching tendencies.",
+  "Scramble Yds", "QB Mobility: Yards gained when the QB breaks the pocket.",
+  "Dual-Threat Tag", "A purple 'DANGER' badge triggered when a QB ranks in the Top 10 league-wide for total rushing yards."
 )
 
-# --- 1B. LOAD DATA (With Safe Parsing) ---
+# --- 1B. LOAD & CLEAN DATA ---
 
-# 1. Offense (Team Stats)
+# 1. Offense
 offense <- read_csv('Data/offense_stats.csv') %>%
   fix_teams() %>%
-  mutate(across(any_of(c("turnovers", "cpoe_avg", "explosive_pass_rate", "third_down_pct")), ~parse_number(as.character(.)))) %>%
+  clean_numeric() %>%
   mutate(
-    pass_rate_overall = if("pass_rate" %in% names(.)) parse_number(as.character(pass_rate)) else runif(n(), 0.50, 0.65),
-    pass_rate_rz = if("pass_rate_rz" %in% names(.)) parse_number(as.character(pass_rate_rz)) else runif(n(), 0.40, 0.60),
-    dakota = if("epa_per_play" %in% names(.)) scale(epa_per_play) + scale(cpoe_avg) else 0
+    pass_rate_overall = if("pass_rate" %in% names(.)) pass_rate else runif(n(), 0.50, 0.65),
+    pass_rate_rz = if("pass_rate_rz" %in% names(.)) pass_rate_rz else runif(n(), 0.40, 0.60),
+    dakota = if("epa_per_play" %in% names(.)) round(scale(epa_per_play) + scale(cpoe_avg), 3) else 0
   )
 
 # 2. Quarterbacks
 qb <- read_csv('Data/qb_stats.csv') %>% 
   fix_teams() %>%
-  # Fix: Remove commas before checking >= 200
-  mutate(attempts = parse_number(as.character(attempts))) %>% 
-  filter(attempts >= 200) %>%
-  mutate(across(any_of(c("cmp_pct_d3", "pass_attempts_d3", "pass_attempts_d4", "cmp_pct_rz", 
-                         "pass_tds_rz", "rushing_tds_rz", "pass_attempts_rz", "comp_pct_wh", 
-                         "total_air_yds_wh", "air_yds_per_pass_wh", "avg_cpoe_wh", "success_rate_wh", 
-                         "ints_wh", "tds_wh")), ~parse_number(as.character(.))))
+  clean_numeric() %>%
+  filter(attempts >= 200)
 
 # 3. Running Backs
 rb <- read_csv('Data/rb_stats.csv') %>% 
   fix_teams() %>% 
-  mutate(carries = parse_number(as.character(carries))) %>% 
-  filter(carries >= 150) %>%
-  mutate(across(any_of(c("rush_success_rate", "yds_at_guard", "yds_at_tackle", "yds_at_end", "receptions", "total_rec_yds", "ypr")), ~parse_number(as.character(.))))
+  clean_numeric() %>%
+  filter(carries >= 150)
 
 # 4. Receivers
 wr <- read_csv('Data/wr_stats.csv') %>% 
   fix_teams() %>% 
-  mutate(receptions = parse_number(as.character(receptions))) %>% 
-  filter(receptions >= 25) %>%
-  mutate(across(any_of(c("total_rec_yds", "ypr", "receptions_down_3", "receptions_down_4")), ~parse_number(as.character(.))))
+  clean_numeric() %>%
+  filter(receptions >= 25)
 
-if("target_share" %in% names(wr)) wr <- wr %>% mutate(target_share = parse_number(as.character(target_share)))
-if("rec_success_rate" %in% names(wr)) wr <- wr %>% mutate(rec_success_rate = parse_number(as.character(rec_success_rate)))
-
-# 5. 4th Down Conversions (New CSV)
-fourth_down_data <- read_csv('Data/fourth_down_conversions.csv') %>%
-  fix_teams()
+# 5. 4th Down
+fourth_down_data <- read_csv('Data/fourth_down_conversions.csv')
 
 # --- Join Division Info ---
 divisions <- nflfastR::teams_colors_logos %>% select(team_abbr, team_division, team_logo_espn)
@@ -102,6 +106,40 @@ qb <- add_ranks(qb)
 rb <- add_ranks(rb)
 wr <- add_ranks(wr)
 
+add_ranks <- function(df) {
+  # Check if distance grouping is needed
+  if("dist_bucket" %in% names(df)) {
+    df <- df %>% group_by(dist_bucket)
+  }
+  
+  df <- df %>% 
+    mutate(across(where(is.numeric) & !any_of(ignore_cols), 
+                  ~min_rank(desc(.)), .names = "{.col}_rank")) %>%
+    # Specific logic for "lower is better" stats
+    mutate(across(any_of(c("turnovers", "ints", "ints_wh")), 
+                  ~min_rank(.), .names = "{.col}_rank")) %>%
+    ungroup() # Always ungroup after grouping
+  
+  return(df)
+}
+
+# Apply to your fourth down data
+fourth_down_data <- add_ranks(fourth_down_data)
+
+# Helper to get color based on rank
+get_rank_color <- function(rank) {
+  if (is.na(rank)) return("#7f8c8d") # Gray if missing
+  if (rank <= 6)  return("#155724") # Dark Green text
+  if (rank <= 19) return("#856404") # Dark Yellow/Gold text
+  return("#721c24")                # Dark Red text
+}
+
+get_rank_bg <- function(rank) {
+  if (is.na(rank)) return("#f8f9fa") 
+  if (rank <= 6)  return("#d4edda") # Light Green BG
+  if (rank <= 19) return("#fff3cd") # Light Yellow BG
+  return("#f8d7da")                # Light Red BG
+}
 
 # ==============================================================================
 # 2. UI
@@ -175,7 +213,7 @@ ui <- fluidPage(
         tabPanel("Key Players", icon = icon("users"),
                  br(),
                  div(class = "section-header", icon("football-ball"), " Quarterbacks"),
-                 tags$p(style="color:gray; font-style:italic;", "Filter: Min 200 Attempts"), DTOutput("qb_table"),
+                 tags$p(style="color:gray; font-style:italic;", "Filter: Min 200 Attempts"), uiOutput("qb_table"),
                  div(class = "section-header", icon("running"), " Running Backs"),
                  tags$p(style="color:gray; font-style:italic;", "Filter: Min 150 Carries"), DTOutput("rb_table"),
                  div(class = "section-header", icon("hands"), " Receivers"),
@@ -241,7 +279,7 @@ server <- function(input, output) {
   # --- TABLES ---
   output$team_table <- renderDT({
     data <- selected_team() %>% select(EPA=epa_per_play, Success=success_rate, Pass_Yds=pass_yds_pg, Rush_Yds=rush_yds_pg, Turnovers=turnovers, CPOE=cpoe_avg, Expl_Pass=explosive_pass_rate, Third_Dn=third_down_pct, Dakota=dakota, EPA_Rank=epa_per_play_rank, Success_Rank=success_rate_rank, Pass_Rank=pass_yds_pg_rank, Rush_Rank=rush_yds_pg_rank, TO_Rank=turnovers_rank, CPOE_Rank=cpoe_avg_rank, Expl_Rank=explosive_pass_rate_rank, Third_Rank=third_down_pct_rank, Dak_Rank=dakota_rank)
-    datatable(data, rownames=FALSE, options=list(dom='t', paging=FALSE, columnDefs=list(list(visible=FALSE, targets=9:17)))) %>% rank_style("EPA", "EPA_Rank") %>% rank_style("Success", "Success_Rank") %>% rank_style("Pass_Yds", "Pass_Rank") %>% rank_style("Rush_Yds", "Rush_Rank") %>% rank_style("Turnovers", "TO_Rank") %>% rank_style("CPOE", "CPOE_Rank") %>% rank_style("Expl_Pass", "Expl_Rank") %>% rank_style("Dakota", "Dak_Rank") %>% formatRound(c("CPOE", "Expl_Pass", "Third_Dn"), 1) %>% formatString(c("CPOE", "Expl_Pass", "Third_Dn"), suffix="%") %>% formatRound("Dakota", 2)
+    datatable(data, rownames=FALSE, options=list(dom='t', paging=FALSE, columnDefs=list(list(visible=FALSE, targets=9:17)))) %>% rank_style("EPA", "EPA_Rank") %>% rank_style("Success", "Success_Rank") %>% rank_style("Pass_Yds", "Pass_Rank") %>% rank_style("Rush_Yds", "Rush_Rank") %>% rank_style("Turnovers", "TO_Rank") %>% rank_style("CPOE", "CPOE_Rank") %>% rank_style("Expl_Pass", "Expl_Rank") %>% rank_style("Third_Dn", "Third_Rank") %>% rank_style("Dakota", "Dak_Rank") %>% formatRound(c("CPOE", "Expl_Pass", "Third_Dn"), 1) %>% formatString(c("CPOE", "Expl_Pass", "Third_Dn"), suffix="%") %>% formatRound("Dakota", 2)
   })
   output$division_table <- renderDT({
     data <- division_stats() %>% select(Team=posteam, EPA=epa_per_play, Pass_Yds=pass_yds_pg, Rush_Yds=rush_yds_pg, Turnovers=turnovers, CPOE=cpoe_avg, EPA_Rank=epa_per_play_rank, Pass_Rank=pass_yds_pg_rank, Rush_Rank=rush_yds_pg_rank, TO_Rank=turnovers_rank, CPOE_Rank=cpoe_avg_rank)
@@ -277,19 +315,109 @@ server <- function(input, output) {
   # --- NEW 4TH DOWN TABLE ---
   output$fourth_down_table <- renderDT({
     req(input$opponent)
+    
     data <- fourth_down_data %>% 
       filter(posteam == input$opponent) %>%
-      select(Distance = dist_bucket, Attempts = attempts, Conversions = conversions, Pct = conv_pct)
+      select(
+        Distance = dist_bucket, 
+        Attempts = attempts, 
+        Conversions = conversions, 
+        Pct = conv_pct,
+        attempts_rank,       # Keep these for styling
+        conversions_rank,
+        conv_pct_rank
+      )
     
-    datatable(data, rownames = FALSE, options = list(dom = 't', paging = FALSE, ordering = FALSE)) %>%
+    datatable(data, 
+              rownames = FALSE, 
+              options = list(
+                dom = 't', 
+                paging = FALSE, 
+                ordering = FALSE,
+                columnDefs = list(list(visible = FALSE, targets = 4:6)) 
+              )) %>%
       formatPercentage("Pct", 1) %>%
-      formatStyle('Pct', backgroundColor = styleInterval(c(0.4, 0.6), c("#f8d7da", "#fff3cd", "#d4edda")), color = styleInterval(c(0.4, 0.6), c("#721c24", "#856404", "#155724")))
+      formatStyle('Pct', 
+                  backgroundColor = styleInterval(c(0.4, 0.6), c("#f8d7da", "#fff3cd", "#d4edda")), 
+                  color = styleInterval(c(0.4, 0.6), c("#721c24", "#856404", "#155724"))) %>%
+      rank_style("Attempts", "attempts_rank") %>% 
+      rank_style("Conversions", "conversions_rank") %>%
+      rank_style("Pct", "conv_pct_rank")
   })
   
   # --- KEY PLAYERS TABLES ---
-  output$qb_table <- renderDT({
-    data <- selected_qbs() %>% select(Player=passer, Games=games_played, Attempts=attempts, Comp_Pct=comp_pct, Air_Yds=total_air_yds, TDs=tds, INTs=ints, CPOE=avg_cpoe, EPA_Pass=epa_per_pass, Air_Yds_Rank=total_air_yds_rank, TDs_Rank=tds_rank, INTs_Rank=ints_rank, CPOE_Rank=avg_cpoe_rank, EPA_Rank=epa_per_pass_rank, Att_Rank=attempts_rank, Comp_Rank=comp_pct_rank)
-    datatable(data, rownames=FALSE, options=list(dom='t', paging=FALSE, columnDefs=list(list(visible=FALSE, targets=9:16)))) %>% rank_style("Air_Yds", "Air_Yds_Rank") %>% rank_style("TDs", "TDs_Rank") %>% rank_style("INTs", "INTs_Rank") %>% rank_style("CPOE", "CPOE_Rank") %>% rank_style("EPA_Pass", "EPA_Rank") %>% rank_style("Attempts", "Att_Rank") %>% rank_style("Comp_Pct", "Comp_Rank") %>% formatRound("CPOE", 1) %>% formatString("CPOE", suffix="%") %>% formatRound("EPA_Pass", 2)
+  output$qb_table <- renderUI({
+    req(selected_qbs())
+    # Get the starter
+    primary_qb <- selected_qbs() %>% arrange(desc(attempts)) %>% slice(1)
+    
+    if(nrow(primary_qb) == 0) return(h4("No QB data available."))
+    
+    # Extract Ranks
+    epa_rank <- primary_qb$epa_per_pass_rank
+    rush_rank <- primary_qb$rushing_yards_rank
+    
+    # Logic for Dual-Threat Badge
+    dual_threat_badge <- if(rush_rank <= 10) {
+      div(style="background-color:#6f42c1; color:white; padding:5px 12px; border-radius:20px; display:inline-block; font-size:0.8em; font-weight:bold; margin-bottom:10px;",
+          icon("bolt"), " DUAL-THREAT DANGER")
+    } else { NULL }
+    
+    tagList(
+      div(class = "identity-box", 
+          style = paste0("border-left: 8px solid ", get_rank_color(epa_rank), "; padding: 20px; position:relative;"),
+          
+          # Badge Placement
+          dual_threat_badge,
+          
+          # Header Row
+          fluidRow(
+            column(8, h2(primary_qb$passer, style="margin:0; font-weight:bold;")),
+            column(4, div(style="text-align:right;", h4(paste("EPA Rank: #", epa_rank), 
+                                                        style=paste0("color:", get_rank_color(epa_rank), "; margin:0;"))))
+          ),
+          hr(),
+          
+          # Stats Grid
+          fluidRow(
+            # Pass Efficiency
+            column(4, 
+                   div(style = paste0("background-color:", get_rank_bg(epa_rank), "; padding:15px; border-radius:10px; text-align:center;"),
+                       h5("EPA PER PASS", style="margin-top:0; font-size:0.8em; color:#555;"),
+                       h3(primary_qb$epa_per_pass, style="margin:5px 0; font-weight:bold;"))
+            ),
+            
+            # Passing Volume
+            column(4, 
+                   div(style = "#eef2f3; padding:15px; border-radius:10px; text-align:center; border: 1px solid #ddd;",
+                       h5("PASS TDS", style="margin-top:0; font-size:0.8em; color:#555;"),
+                       h3(primary_qb$tds, style="margin:5px 0; font-weight:bold;"),
+                       span(style="color:#555;", paste0("Rank: #", primary_qb$tds_rank)))
+            ),
+            
+            # Rushing Production
+            column(4, 
+                   div(style = paste0("background-color:", get_rank_bg(rush_rank), "; padding:15px; border-radius:10px; text-align:center;"),
+                       h5("RUSHING YARDS", style="margin-top:0; font-size:0.8em; color:#555;"),
+                       h3(primary_qb$rushing_yards, style="margin:5px 0; font-weight:bold;"),
+                       span(style=paste0("color:", get_rank_color(rush_rank), "; font-weight:bold;"), 
+                            paste0("Rank: #", rush_rank)))
+            )
+          ),
+          
+          br(),
+          
+          # Situational Footer
+          fluidRow(
+            column(6, div(class="well", style="padding:10px; margin-bottom:0;",
+                          p(icon("shield-alt"), strong(" Red Zone TD %: "), primary_qb$comp_pct_rz, "%"),
+                          p(icon("clock"), strong(" 3rd Down Comp %: "), primary_qb$cmp_pct_d3, "%"))),
+            column(6, div(class="well", style="padding:10px; margin-bottom:0;",
+                          p(icon("wind"), strong(" Air Yds/Pass: "), primary_qb$air_yds_per_pass),
+                          p(icon("exclamation-triangle"), strong(" INTs: "), primary_qb$ints)))
+          )
+      )
+    )
   })
   
   output$rb_table <- renderDT({

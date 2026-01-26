@@ -1,7 +1,7 @@
 library(tidyverse)
 library(nflfastR)
 
-pbp <- load_pbp(2025)
+pbp <- load_pbp(2025) %>% filter(season_type == "REG")
 
 fourth_down_grouped <- pbp %>%
   # 1. Filter for 4th Down & Actual Attempts

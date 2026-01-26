@@ -2,7 +2,7 @@ library(nflfastR)
 library(tidyverse)
 library(readr)
 
-pbp_r <- load_pbp(2025)
+pbp_r <- load_pbp(2025) %>% filter(season_type == "REG")
 
 # --- Helper: Points Allowed ---
 # Aggregates the final score of the opponent (posteam) for every game the defense played

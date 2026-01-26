@@ -2,7 +2,7 @@ library(nflfastR)
 library(tidyverse)
 library(readr)
 
-pbp_r <- load_pbp(2025)
+pbp_r <- load_pbp(2025) %>% filter(season_type == "REG")
 
 points <- pbp_r %>%
   filter(!is.na(posteam)) %>%
@@ -93,6 +93,14 @@ offense <- pbp_r %>%
 offense <- offense %>%
   left_join(points, by = "posteam") %>%
   left_join(score_diff, by = "posteam") %>%
-  left_join(qb_scrambles, by = "posteam")
+  left_join(qb_scrambles, by = "posteam") %>%
+  # 1. Convert probabilities to percentages
+  mutate(across(any_of(c(
+    "success_rate", "comp_pct", "explosive_pass_rate", 
+    "deep_comp_rate", "qb_hit_pct", "explosive_run_rate", 
+    "third_down_pct", "rz_td_efficiency", "tfl_rate"
+  )), ~ . * 100)) %>%
+  # 2. Round everything for the CSV
+  mutate(across(where(is.numeric), ~round(., 3)))
 
 write_csv(offense, "Data/offense_stats.csv")
