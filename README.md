@@ -6,6 +6,8 @@ A comprehensive analytics platform designed for football coaches and decision-ma
 [![Shiny](https://img.shields.io/badge/Shiny-Interactive-brightgreen)](https://shiny.rstudio.com/)
 [![nflfastR](https://img.shields.io/badge/nflfastR-latest-orange)](https://www.nflfastr.com/)
 
+Dashboard found here: https://jakeblumengarten.shinyapps.io/NFL_Scouting_Dashboard/
+
 ## 🎯 Project Overview
 
 This interactive dashboard provides **real-time opponent analysis** for the 2025 NFL season, aggregating play-by-play data into actionable scouting reports.  Designed for coaching staffs and front office personnel, it delivers: 
