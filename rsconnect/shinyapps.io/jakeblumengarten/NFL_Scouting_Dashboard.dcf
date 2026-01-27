@@ -5,8 +5,9 @@ account: jakeblumengarten
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 16478970
-bundleId: 11497523
+bundleId: 11501592
 url: https://jakeblumengarten.shinyapps.io/NFL_Scouting_Dashboard/
 version: 1
 asMultiple: FALSE
 asStatic: FALSE
+ignoredFiles: .RData|.RDataTmp|.Rprofile|01_Data.R|README.md|renv.lock|Team_tables/4th_down_conversion.R|Team_tables/defense.R|Team_tables/offense.R|trying_python.ipynb|Player_tables
