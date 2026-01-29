@@ -292,9 +292,63 @@ server <- function(input, output) {
     datatable(data, rownames=FALSE, options=list(dom='t', paging=FALSE, columnDefs=list(list(visible=FALSE, targets=8:14)))) %>% rank_style("Cmp_Pct", "Cmp_R") %>% rank_style("Air_Yds", "Air_R") %>% rank_style("YPA", "YPA_R") %>% rank_style("CPOE", "CPOE_R") %>% rank_style("Success", "Succ_R") %>% rank_style("INTs", "INT_R") %>% rank_style("TDs", "TD_R") %>% formatRound("Cmp_Pct", 1) %>% formatString("Cmp_Pct", suffix="%") %>% formatRound("CPOE", 1) %>% formatString("CPOE", suffix="%")
   })
   output$qb_situational_table_rz <- renderDT({
-    data <- selected_qbs() %>% select(Player=passer, Rush_TDs=rushing_tds_rz, Pass_TDs=pass_tds_rz, RZ_Att=pass_attempts_rz, RZ_Cmp_Pct=cmp_pct_rz, RushTD_Rank=rushing_tds_rz_rank, PassTD_Rank=pass_tds_rz_rank, RZ_Att_Rank=pass_attempts_rz_rank, RZ_Cmp_Rank=cmp_pct_rz_rank)
-    datatable(data, rownames=FALSE, options=list(dom='t', paging=FALSE, columnDefs=list(list(visible=FALSE, targets=5:8)))) %>% rank_style("Rush_TDs", "RushTD_Rank") %>% rank_style("Pass_TDs", "PassTD_Rank") %>% rank_style("RZ_Att", "RZ_Att_Rank") %>% rank_style("RZ_Cmp_Pct", "RZ_Cmp_Rank") %>% formatRound("RZ_Cmp_Pct", 1) %>% formatString("RZ_Cmp_Pct", suffix="%")
+    req(selected_qbs())
+    df_qbs <- selected_qbs()
+    
+    display_data <- df_qbs %>% 
+      select(
+        any_of(c(
+          "Player" = "passer", 
+          "Rush_TDs" = "rushing_tds_rz", 
+          "Pass_TDs" = "pass_tds_rz", 
+          "RZ_Att" = "pass_attempts_rz", 
+          "RZ_Cmp_Pct" = "cmp_pct_rz"
+        )),
+        any_of(c("rushing_tds_rz_rank", "pass_tds_rz_rank", 
+                 "pass_attempts_rz_rank", "cmp_pct_rz_rank"))
+      )
+    
+    rank_indices <- grep("rank", names(display_data))
+    
+    dt_out <- datatable(
+      display_data, 
+      rownames = FALSE, 
+      options = list(
+        dom = 't', 
+        paging = FALSE, 
+        columnDefs = list(list(visible = FALSE, targets = rank_indices - 1))
+      )
+    )
+    
+    # --- Color Coding Section ---
+    if ("Rush_TDs" %in% names(display_data)) {
+      dt_out <- dt_out %>% rank_style("Rush_TDs", "rushing_tds_rz_rank")
+    }
+    
+    if ("Pass_TDs" %in% names(display_data)) {
+      dt_out <- dt_out %>% rank_style("Pass_TDs", "pass_tds_rz_rank")
+    }
+    
+    # ADDED: Color coding for Red Zone Attempts
+    if ("RZ_Att" %in% names(display_data)) {
+      dt_out <- dt_out %>% rank_style("RZ_Att", "pass_attempts_rz_rank")
+    }
+    
+    # --- Formatting Section ---
+    if ("RZ_Cmp_Pct" %in% names(display_data)) {
+      dt_out <- dt_out %>% 
+        formatRound("RZ_Cmp_Pct", 1) %>% 
+        formatString("RZ_Cmp_Pct", suffix="%")
+    }
+    
+    # Optional: Ensure Attempts are clean integers
+    if ("RZ_Att" %in% names(display_data)) {
+      dt_out <- dt_out %>% formatRound("RZ_Att", 0)
+    }
+    
+    return(dt_out)
   })
+  
   output$qb_downs_table <- renderDT({
     data <- selected_qbs() %>% select(Player=passer, D1_Att=pass_attempts_d1, D1_Cmp=cmp_pct_d1, D2_Att=pass_attempts_d2, D2_Cmp=cmp_pct_d2, D3_Att=pass_attempts_d3, D3_Cmp=cmp_pct_d3, D4_Att=pass_attempts_d4, D1A_R=pass_attempts_d1_rank, D1C_R=cmp_pct_d1_rank, D2A_R=pass_attempts_d2_rank, D2C_R=cmp_pct_d2_rank, D3A_R=pass_attempts_d3_rank, D3C_R=cmp_pct_d3_rank, D4A_R=pass_attempts_d4_rank)
     datatable(data, rownames=FALSE, options=list(dom='t', paging=FALSE, columnDefs=list(list(visible=FALSE, targets=8:14)))) %>% rank_style("D1_Att", "D1A_R") %>% rank_style("D1_Cmp", "D1C_R") %>% rank_style("D2_Att", "D2A_R") %>% rank_style("D2_Cmp", "D2C_R") %>% rank_style("D3_Att", "D3A_R") %>% rank_style("D3_Cmp", "D3C_R") %>% rank_style("D4_Att", "D4A_R") %>% formatRound(c("D1_Cmp", "D2_Cmp", "D3_Cmp"), 1) %>% formatString(c("D1_Cmp", "D2_Cmp", "D3_Cmp"), suffix="%")

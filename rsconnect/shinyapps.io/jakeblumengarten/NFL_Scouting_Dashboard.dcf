@@ -5,7 +5,7 @@ account: jakeblumengarten
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 16478970
-bundleId: 11501592
+bundleId: 11501625
 url: https://jakeblumengarten.shinyapps.io/NFL_Scouting_Dashboard/
 version: 1
 asMultiple: FALSE

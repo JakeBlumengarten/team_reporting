@@ -257,17 +257,30 @@ old_game_id,week,game_type,home_team,home_score,away_team,away_score,gameday,gam
 2025122900,17,REG,ATL,27,LA,24,2025-12-29,20:15,0,closed,fieldturf,NA,NA,Raheem Morris,Sean McVay,Clete Blakeman,ATL97,Mercedes-Benz Stadium
 2026010300,18,REG,TB,16,CAR,14,2026-01-03,16:30,0,outdoors,grass,69,11,Todd Bowles,Dave Canales,Brad Allen,TAM00,Raymond James Stadium
 2026010301,18,REG,SF,3,SEA,13,2026-01-03,20:00,0,outdoors,grass,57,8,Kyle Shanahan,Mike Macdonald,Bill Vinovich,SFO01,Levi's Stadium
-2026010400,18,REG,ATL,NA,NO,NA,2026-01-04,13:00,NA,closed,fieldturf,NA,NA,Raheem Morris,Kellen Moore,NA,ATL97,Mercedes-Benz Stadium
-2026010403,18,REG,CIN,NA,CLE,NA,2026-01-04,13:00,NA,outdoors,fieldturf,NA,NA,Zac Taylor,Kevin Stefanski,NA,CIN00,Paycor Stadium
-2026010405,18,REG,HOU,NA,IND,NA,2026-01-04,13:00,NA,closed,astroturf,NA,NA,DeMeco Ryans,Shane Steichen,NA,HOU00,NRG Stadium
-2026010406,18,REG,JAX,NA,TEN,NA,2026-01-04,13:00,NA,outdoors,grass,NA,NA,Liam Coen,Brian Callahan,NA,JAX00,TIAA Bank Stadium
-2026010409,18,REG,MIN,NA,GB,NA,2026-01-04,13:00,NA,dome,sportturf,NA,NA,Kevin O'Connell,Matt LaFleur,NA,MIN01,U.S. Bank Stadium
-2026010411,18,REG,NYG,NA,DAL,NA,2026-01-04,13:00,NA,outdoors,fieldturf,NA,NA,Brian Daboll,Brian Schottenheimer,NA,NYC01,MetLife Stadium
-2026010401,18,REG,BUF,NA,NYJ,NA,2026-01-04,16:25,NA,outdoors,a_turf,NA,NA,Sean McDermott,Aaron Glenn,NA,BUF00,New Era Field
-2026010402,18,REG,CHI,NA,DET,NA,2026-01-04,16:25,NA,outdoors,grass,NA,NA,Ben Johnson,Dan Campbell,NA,CHI98,Soldier Field
-2026010404,18,REG,DEN,NA,LAC,NA,2026-01-04,16:25,NA,outdoors,grass,NA,NA,Sean Payton,Jim Harbaugh,NA,DEN00,Empower Field at Mile High
-2026010407,18,REG,LA,NA,ARI,NA,2026-01-04,16:25,NA,dome,matrixturf,NA,NA,Sean McVay,Jonathan Gannon,NA,LAX01,SoFi Stadium
-2026010408,18,REG,LV,NA,KC,NA,2026-01-04,16:25,NA,dome,grass,NA,NA,Pete Carroll,Andy Reid,NA,VEG00,Allegiant Stadium
-2026010410,18,REG,NE,NA,MIA,NA,2026-01-04,16:25,NA,outdoors,fieldturf,NA,NA,Mike Vrabel,Mike McDaniel,NA,BOS00,Gillette Stadium
-2026010412,18,REG,PHI,NA,WAS,NA,2026-01-04,16:25,NA,outdoors,grass,NA,NA,Nick Sirianni,Dan Quinn,NA,PHI00,Lincoln Financial Field
-2026010413,18,REG,PIT,NA,BAL,NA,2026-01-04,20:20,NA,outdoors,grass,NA,NA,Mike Tomlin,John Harbaugh,NA,PIT00,Acrisure Stadium
+2026010400,18,REG,ATL,19,NO,17,2026-01-04,13:00,0,closed,fieldturf,NA,NA,Raheem Morris,Kellen Moore,Ron Torbert,ATL97,Mercedes-Benz Stadium
+2026010403,18,REG,CIN,18,CLE,20,2026-01-04,13:00,0,outdoors,fieldturf,37,0,Zac Taylor,Kevin Stefanski,Alex Kemp,CIN00,Paycor Stadium
+2026010405,18,REG,HOU,38,IND,30,2026-01-04,13:00,0,closed,astroturf,NA,NA,DeMeco Ryans,Shane Steichen,Land Clark,HOU00,NRG Stadium
+2026010406,18,REG,JAX,41,TEN,7,2026-01-04,13:00,0,outdoors,grass,55,8,Liam Coen,Brian Callahan,Scott Novak,JAX00,TIAA Bank Stadium
+2026010409,18,REG,MIN,16,GB,3,2026-01-04,13:00,0,dome,sportturf,NA,NA,Kevin O'Connell,Matt LaFleur,John Hussey,MIN01,U.S. Bank Stadium
+2026010411,18,REG,NYG,34,DAL,17,2026-01-04,13:00,0,outdoors,fieldturf,33,7,Brian Daboll,Brian Schottenheimer,Adrian Hill,NYC01,MetLife Stadium
+2026010401,18,REG,BUF,35,NYJ,8,2026-01-04,16:25,0,outdoors,a_turf,27,13,Sean McDermott,Aaron Glenn,Alan Eck,BUF00,New Era Field
+2026010402,18,REG,CHI,16,DET,19,2026-01-04,16:25,0,outdoors,grass,33,4,Ben Johnson,Dan Campbell,Brad Rogers,CHI98,Soldier Field
+2026010404,18,REG,DEN,19,LAC,3,2026-01-04,16:25,0,outdoors,grass,66,8,Sean Payton,Jim Harbaugh,Clete Blakeman,DEN00,Empower Field at Mile High
+2026010407,18,REG,LA,37,ARI,20,2026-01-04,16:25,0,dome,matrixturf,NA,NA,Sean McVay,Jonathan Gannon,Carl Cheffers,LAX01,SoFi Stadium
+2026010408,18,REG,LV,14,KC,12,2026-01-04,16:25,0,dome,grass,NA,NA,Pete Carroll,Andy Reid,Craig Wrolstad,VEG00,Allegiant Stadium
+2026010410,18,REG,NE,38,MIA,10,2026-01-04,16:25,0,outdoors,fieldturf,29,6,Mike Vrabel,Mike McDaniel,Clay Martin,BOS00,Gillette Stadium
+2026010412,18,REG,PHI,17,WAS,24,2026-01-04,16:25,0,outdoors,grass,35,9,Nick Sirianni,Dan Quinn,Shawn Hochuli,PHI00,Lincoln Financial Field
+2026010413,18,REG,PIT,26,BAL,24,2026-01-04,20:20,0,outdoors,grass,25,3,Mike Tomlin,John Harbaugh,Shawn Smith,PIT00,Acrisure Stadium
+2026011000,19,WC,CAR,31,LA,34,2026-01-10,16:30,0,outdoors,grass,72,16,Dave Canales,Sean McVay,Clete Blakeman,CAR00,Bank of America Stadium
+2026011001,19,WC,CHI,31,GB,27,2026-01-10,20:00,0,outdoors,grass,32,6,Ben Johnson,Matt LaFleur,Adrian Hill,CHI98,Soldier Field
+2026011100,19,WC,JAX,24,BUF,27,2026-01-11,13:00,0,outdoors,grass,62,6,Liam Coen,Sean McDermott,Brad Allen,JAX00,TIAA Bank Stadium
+2026011101,19,WC,PHI,19,SF,23,2026-01-11,16:30,0,outdoors,grass,46,22,Nick Sirianni,Kyle Shanahan,Alan Eck,PHI00,Lincoln Financial Field
+2026011102,19,WC,NE,16,LAC,3,2026-01-11,20:00,0,outdoors,fieldturf,35,10,Mike Vrabel,Jim Harbaugh,Ron Torbert,BOS00,Gillette Stadium
+2026011200,19,WC,PIT,6,HOU,30,2026-01-12,20:00,0,outdoors,grass,32,9,Mike Tomlin,DeMeco Ryans,Craig Wrolstad,PIT00,Acrisure Stadium
+2026011700,20,DIV,DEN,33,BUF,30,2026-01-17,16:30,1,outdoors,grass,36,5,Sean Payton,Sean McDermott,Carl Cheffers,DEN00,Empower Field at Mile High
+2026011701,20,DIV,SEA,41,SF,6,2026-01-17,20:00,0,outdoors,fieldturf,46,5,Mike Macdonald,Kyle Shanahan,John Hussey,SEA00,Lumen Field
+2026011801,20,DIV,NE,28,HOU,16,2026-01-18,15:00,0,outdoors,fieldturf,35,2,Mike Vrabel,DeMeco Ryans,Shawn Smith,BOS00,Gillette Stadium
+2026011800,20,DIV,CHI,17,LA,20,2026-01-18,18:30,1,outdoors,grass,19,6,Ben Johnson,Sean McVay,Shawn Hochuli,CHI98,Soldier Field
+2026012500,21,CON,DEN,7,NE,10,2026-01-25,15:00,0,outdoors,grass,26,10,Sean Payton,Mike Vrabel,Alex Kemp,DEN00,Empower Field at Mile High
+2026012501,21,CON,SEA,31,LA,27,2026-01-25,18:30,0,outdoors,fieldturf,41,2,Mike Macdonald,Sean McVay,Clay Martin,SEA00,Lumen Field
+2026020800,22,SB,NE,NA,SEA,NA,2026-02-08,18:30,NA,outdoors,grass,NA,NA,Mike Vrabel,Mike Macdonald,NA,SFO01,Levi's Stadium
